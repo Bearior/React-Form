@@ -6,6 +6,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [gender, setGender] = useState("");
 
   const [loader, setLoader] = useState(false);
 
@@ -18,6 +19,7 @@ const Contact = () => {
         name: name,
         email: email,
         message: message,
+        gender: gender,
       })
       .then(() => {
         setLoader(false);
@@ -31,6 +33,7 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
+    setGender("");
   };
 
   return (
@@ -58,6 +61,14 @@ const Contact = () => {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
+      
+      <label>Gender</label>
+      <select
+        value={gender}
+        onChange={(e) => setGender(e.target.value)}>
+        <option value="Men">Men</option>
+        <option value="Women">Women</option>
+      </select>
 
       <button
         type="submit"

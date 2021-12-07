@@ -66,6 +66,12 @@ textarea:focus {
   font-weight: bold;
 }
 
+.form > select {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+}
+
 .form > button {
   padding: 20px;
   border: none;
