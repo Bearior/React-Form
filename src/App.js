@@ -1,5 +1,5 @@
 import React from "react";
-import Contact from "./components/Contact";
+import Contact from "./Contact";
 import "./app.css";
 // import liff from '@line/liff';
 // import { useEffect, useState } from 'react';
