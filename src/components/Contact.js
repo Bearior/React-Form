@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../app.css";
 import { db } from "../firebase";
 
@@ -38,8 +38,7 @@ const Contact = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <h1></h1>
-      <h2>Please fill the form 🤳</h2>
+      <h2>Please fill the form </h2>
 
       <label>Name</label>
       <input
@@ -48,9 +47,9 @@ const Contact = () => {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label>Email</label>
+      <label>Age</label>
       <input
-        placeholder="Email"
+        placeholder="Age"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
