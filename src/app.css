@@ -28,18 +28,18 @@ button {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
 }
 
-.form > h1 {
-  margin-bottom: 30px;
+.form > h2 {
+  margin-top: 15px;
 }
 
 .form > input,
 textarea {
   padding: 20px;
   border-radius: 3px;
-  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
   margin-bottom: 20px;
   border: 1px solid lightgray;
   /* border: none; */
@@ -61,15 +61,32 @@ textarea:focus {
 }
 
 .form > label {
+  margin-top: 10px;
   padding-bottom: 10px;
   color: rgb(0, 0, 32);
   font-weight: bold;
 }
 
 .form > select {
+  padding-top: 10px;
   padding-bottom: 10px;
   color: rgb(0, 0, 32);
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left ;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137);
+  border-radius: 3px;
+  padding: 20px;
+}
+.form > img {
+  margin-bottom: 10px;
+
+}
+
+.form > radio > p {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .form > button {
@@ -88,3 +105,5 @@ textarea:focus {
 .form > button:hover {
   background-color: rgb(0, 0, 196);
 }
+
+
